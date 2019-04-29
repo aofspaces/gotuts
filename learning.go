@@ -3,11 +3,17 @@ package main
 import "fmt"
 
 var (
-	name     string = "Zero"
-	date     int    = 1
-	location string = "bangkok"
+	name, location string = "Zero", "bangkok"
+	date           int    = 1
 )
 
 func main() {
 	fmt.Println(name, date, location)
+	phoneBrand := "iPhone"
+
+	showDetail := func() {
+		fmt.Println(name, date, location, phoneBrand)
+	}
+
+	showDetail()
 }
